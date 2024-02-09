@@ -6,4 +6,5 @@ Tarefas :
 - Setar permissões do Gitpod para o GitHub
 - Subir Airbyte via Docker
 - Subir Airflow via Docker
+- 
 
