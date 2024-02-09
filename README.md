@@ -4,7 +4,10 @@ Estudo de caso COVID utilizando Airbyte para extração, Airflow como orquestrad
 Tarefas :
 
 - Setar permissões do Gitpod para o GitHub - OK
-- Subir Airbyte via Docker - 
+- Subir Airbyte via Docker - OK
+    Dar fork no github do airbyte, criar uma branch (branch_airbyte)
+    git clone -b branch_airbyte https://github.com/gsvimieiro/airbyte.git
+
 - Subir Airflow via Docker - 
 - Criar conta na AWS - OK
 - Na AWS
