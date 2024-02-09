@@ -8,7 +8,7 @@ Tarefas :
     - Dar fork no github do airbyte, criar uma branch (branch_airbyte)
     - git clone -b branch_airbyte https://github.com/gsvimieiro/airbyte.git
 
-- Subir Airflow via Docker - 
+- Subir Airflow via Docker - OK
 - Criar conta na AWS - OK
 - Na AWS
     - Criar o repositório
