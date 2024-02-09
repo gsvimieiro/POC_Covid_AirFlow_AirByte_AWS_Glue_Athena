@@ -6,5 +6,12 @@ Tarefas :
 - Setar permissões do Gitpod para o GitHub
 - Subir Airbyte via Docker
 - Subir Airflow via Docker
-- 
-
+- Criar conta na AWS
+- Na AWS
+    Criar o repositório
+    Criar dentro do repositorio as pastas raw e processed
+- No Airbyte :
+    Preparar a extração dos CSV's COVID
+    Configurar o target S3
+- No Airflow :
+    Criar as DAG'S de orquestração
