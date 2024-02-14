@@ -6,6 +6,7 @@ Estudo de caso COVID utilizando Airbyte para extração, Airflow como orquestrad
 
 ![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/a6960143-f077-4be2-80aa-2c3fc60d55a6)
 
+- Observação importante : Neste exemplo, por ser mais didático eu não estou preocupado com Segurança pois meu intuíto é mostrar o funcionamento de ponta a ponta da minha solução, então, questões como secret's, bucket privado, etc eu não adotei
 
 Tarefas :
 
@@ -38,8 +39,9 @@ Tarefas :
         - docker network connect poc-airbyte-airflow airflow-airflow-worker-1
         - docker network connect poc-airbyte-airflow airflow-airflow-webserver-1
 
- - Pode-se instalar a lib para conexão do airbyte/airflow 
+- Pode-se instalar a lib para conexão do airbyte/airflow 
 
     - docker-compose run airflow-webserver airflow connections add 'airbyte_connection' --conn-uri 'airbyte://airbyte-proxy:8000'
 
-- Observação importante : Neste exemplo, por ser mais didático eu não estou preocupado com Segurança pois meu intuíto é mostrar o funcionamento de ponta a ponta da minha solução, então, questões como secret's, bucket privado, etc eu não adotei
+- AWS Glue Crawler:
+    - Esta ferramenta irá classificar e inferir o schema dos arquivos Parquet (Economy, Index Demographics e Epidemiology), ao término ele irá catalogar todos os 4 arquivo no Data Catalog
