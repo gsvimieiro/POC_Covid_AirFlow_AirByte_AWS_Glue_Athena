@@ -44,6 +44,9 @@ Tarefas :
     - docker-compose run airflow-webserver airflow connections add 'airbyte_connection' --conn-uri 'airbyte://airbyte-proxy:8000'
 
 - AWS Glue Crawler:
-    - Esta ferramenta irá classificar e inferir o schema dos arquivos Parquet (Economy, Index Demographics e Epidemiology), ao término ele irá catalogar todos os 4 arquivo no Data Catalog
+    - Esta ferramenta irá classificar e inferir o schema dos arquivos Parquet (Economy, Index Demographics e Epidemiology), ao término ele irá catalogar todos os 4 arquivo no Data Catalog como na imagem abaixo :
 
-![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/a9163a61-c751-46db-83ee-db5976930254)
+![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/40cc46b9-89e1-4c49-adb0-355e167a7239)
+      
+
+
