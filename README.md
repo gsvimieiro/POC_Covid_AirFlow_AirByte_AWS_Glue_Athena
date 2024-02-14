@@ -50,6 +50,11 @@ Tarefas :
       
     - Com o Glue Crawler podemos fazer pequenas transformações como : eliminar colunas, trocar tipo de coluna, etc
 
-- AWS Glue 
+- AWS Glue ETL
+
+    - Ferramenta para criar ETL's completos e complexos visualmente e formando scripts
+
+    Um exemplo visual :
+    
 
 
