@@ -55,6 +55,18 @@ Tarefas :
     - Ferramenta para criar ETL's completos e complexos visualmente e formando scripts
 
     Um exemplo visual :
+
+![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/14dca5e6-272f-4f1a-b2c0-b3280b30f94b)
+
+Colocamos o Target do Script para gravar no diretório processed do S3
+Após rodar o Script os arquivos Parquet's já gravados
+
+![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/ee53f3aa-ff12-407c-8a65-f06368ff188f)
+
+- AWS Athena
+  
+
+
     
 
 
