@@ -45,3 +45,5 @@ Tarefas :
 
 - AWS Glue Crawler:
     - Esta ferramenta irá classificar e inferir o schema dos arquivos Parquet (Economy, Index Demographics e Epidemiology), ao término ele irá catalogar todos os 4 arquivo no Data Catalog
+
+![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/a9163a61-c751-46db-83ee-db5976930254)
