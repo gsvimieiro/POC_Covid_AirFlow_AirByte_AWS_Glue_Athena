@@ -1,0 +1,99 @@
+import sys
+from awsglue.transforms import *
+from awsglue.utils import getResolvedOptions
+from pyspark.context import SparkContext
+from awsglue.context import GlueContext
+from awsglue.job import Job
+from awsglue.dynamicframe import DynamicFrame
+from pyspark.sql import functions as SqlFuncs
+
+args = getResolvedOptions(sys.argv, ["JOB_NAME"])
+sc = SparkContext()
+glueContext = GlueContext(sc)
+spark = glueContext.spark_session
+job = Job(glueContext)
+job.init(args["JOB_NAME"], args)
+
+# Script generated for node demographics
+demographics_node1707932083492 = glueContext.create_dynamic_frame.from_catalog(
+    database="raw-crawler",
+    table_name="crawler-demographics",
+    transformation_ctx="demographics_node1707932083492",
+)
+
+# Script generated for node Economy
+Economy_node1707932101348 = glueContext.create_dynamic_frame.from_catalog(
+    database="raw-crawler",
+    table_name="crawler-economy",
+    transformation_ctx="Economy_node1707932101348",
+)
+
+# Script generated for node epidemiology
+epidemiology_node1707932136538 = glueContext.create_dynamic_frame.from_catalog(
+    database="raw-crawler",
+    table_name="crawler-epidemiology",
+    transformation_ctx="epidemiology_node1707932136538",
+)
+
+# Script generated for node index
+index_node1707932161419 = glueContext.create_dynamic_frame.from_catalog(
+    database="raw-crawler",
+    table_name="crawler-index",
+    transformation_ctx="index_node1707932161419",
+)
+
+# Script generated for node Join
+Join_node1707932211440 = Join.apply(
+    frame1=demographics_node1707932083492,
+    frame2=Economy_node1707932101348,
+    keys1=["location_key"],
+    keys2=["location_key"],
+    transformation_ctx="Join_node1707932211440",
+)
+
+# Script generated for node Drop Duplicates
+DropDuplicates_node1707932428044 = DynamicFrame.fromDF(
+    demographics_node1707932083492.toDF().dropDuplicates(),
+    glueContext,
+    "DropDuplicates_node1707932428044",
+)
+
+# Script generated for node Drop Fields
+DropFields_node1707932472122 = DropFields.apply(
+    frame=demographics_node1707932083492,
+    paths=["population_clustered", "human_development_index"],
+    transformation_ctx="DropFields_node1707932472122",
+)
+
+# Script generated for node Join
+Join_node1707932266582 = Join.apply(
+    frame1=epidemiology_node1707932136538,
+    frame2=index_node1707932161419,
+    keys1=["location_key"],
+    keys2=["location_key"],
+    transformation_ctx="Join_node1707932266582",
+)
+
+# Script generated for node Join
+Join_node1707932328975 = Join.apply(
+    frame1=Join_node1707932266582,
+    frame2=Join_node1707932211440,
+    keys1=["location_key"],
+    keys2=["location_key"],
+    transformation_ctx="Join_node1707932328975",
+)
+
+# Script generated for node Amazon S3
+AmazonS3_node1707932525975 = glueContext.write_dynamic_frame.from_options(
+    frame=Join_node1707932328975,
+    connection_type="s3",
+    format="glueparquet",
+    connection_options={
+        "path": "s3://poc-covid-19/covid-19/processed/",
+        "partitionKeys": [],
+    },
+    format_options={"compression": "snappy"},
+    transformation_ctx="AmazonS3_node1707932525975",
+)
+
+job.commit()

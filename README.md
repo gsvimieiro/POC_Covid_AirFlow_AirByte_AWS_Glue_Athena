@@ -48,5 +48,8 @@ Tarefas :
 
 ![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/40cc46b9-89e1-4c49-adb0-355e167a7239)
       
+    - Com o Glue Crawler podemos fazer pequenas transformações como : eliminar colunas, trocar tipo de coluna, etc
+
+- AWS Glue 
 
 
