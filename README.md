@@ -4,7 +4,8 @@ Este pequeno projeto foi baseado no curso ministrado pelo Giuliano (Data Enginee
 
 Estudo de caso COVID utilizando Airbyte para extração, Airflow como orquestrador, AWS Glue/Krawler para catalogar, inferir o schema e realizar transformação e por fim Athena para análise. 
 
-![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/a6960143-f077-4be2-80aa-2c3fc60d55a6)
+![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/238e1e48-fe31-40ff-84b3-82bd0f593450)
+
 
 - Observação importante : Neste exemplo, por ser mais didático eu não estou preocupado com Segurança pois meu intuíto é mostrar o funcionamento de ponta a ponta da minha solução, então, questões como secret's, bucket privado, etc eu não adotei
 
