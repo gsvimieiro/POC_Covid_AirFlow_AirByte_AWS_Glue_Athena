@@ -24,3 +24,20 @@ Tarefas :
     - Configurar o target S3 OK
 - No Airflow :
     - Criar as DAG'S de orquestração
+    - Instalar a lib para conexão Airbyte
+        - procurar o container airflow-airflow-webserver 
+        - botao direito --> Attach Shell
+        - pip install apache-airflow-providers-airbyte
+        - restarta o container
+- No Docker :
+    - Criar uma rede no docker ex.: poc-airbyte-airflow
+        - docker network create poc-airbyte-airflow
+    - Adicionar os containers nesta rede 
+        - docker network connect poc-airbyte-airflow airbyte-proxy
+        - docker network connect poc-airbyte-airflow airbyte-worker
+        - docker network connect poc-airbyte-airflow airflow-airflow-worker-1
+        - docker network connect poc-airbyte-airflow airflow-airflow-webserver-1
+
+ - Pode-se instalar a lib para conexão do airbyte/airflow 
+
+    - docker-compose run airflow-webserver airflow connections add 'airbyte_connection' --conn-uri 'airbyte://airbyte-proxy:8000'
