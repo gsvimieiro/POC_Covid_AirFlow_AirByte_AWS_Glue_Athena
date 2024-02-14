@@ -17,10 +17,10 @@ Tarefas :
 - Subir Airflow via Docker - OK
 - Criar conta na AWS - OK
 - Na AWS
-    - Criar o repositório
-    - Criar dentro do repositorio as pastas raw e processed
+    - Criar o repositório OK
+    - Criar dentro do repositorio as pastas raw e processed OK
 - No Airbyte :
-    - Preparar a extração dos CSV's COVID
-    - Configurar o target S3
+    - Preparar a extração dos CSV's COVID  OK
+    - Configurar o target S3 OK
 - No Airflow :
     - Criar as DAG'S de orquestração
