@@ -86,6 +86,11 @@ Após rodar o Crawler, temos agora todas as nossas tabelas catalogadas e inferid
 
 - AWS Athena
   
+Este completo editor, já conseguimos trabalhar com todas as tabelas catalogadas pelo Crawler do AWS Glue
+
+![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/403c24c3-483e-4b76-a1a4-f3c9f686f4b0)
+
+
 
 
     
