@@ -75,6 +75,11 @@ Após rodar o Script os arquivos Parquet's já gravados
 
 ![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/ee53f3aa-ff12-407c-8a65-f06368ff188f)
 
+Após o processamento, iremos novamente editar o nosso Crawler inserindo o schema da tabela recem processada  no S3
+
+![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/bb55dc96-20a0-4cb5-b8eb-c4536fdf6bc9)
+
+
 - AWS Athena
   
 
