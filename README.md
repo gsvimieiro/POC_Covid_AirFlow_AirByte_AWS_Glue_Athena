@@ -1,4 +1,4 @@
-# Poc_Covid_AirFlow_AirByte_AWS_Glue_Athena
+# Projeto piloto utilizando conceitos de extração, orquestração, armazanamento, catalogação e exploração através de Pipelines robustas e modernas
 
 Este pequeno projeto foi baseado no curso ministrado pelo Giuliano Ferreira (Data Engineering usando a Modern Data Stack da Stack Academy - https://stack-academy.memberkit.com.br/)
 
@@ -86,12 +86,12 @@ Após rodar o Crawler, temos agora todas as nossas tabelas catalogadas e inferid
 
 - AWS Athena
   
-Este completo editor, já conseguimos trabalhar e fazer várias análises com todas as tabelas catalogadas pelo Crawler do AWS Glue
+Nesse editor, já conseguimos trabalhar e fazer várias análises via SQL com as tabelas catalogadas pelo Crawler do AWS Glue
 
 ![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/403c24c3-483e-4b76-a1a4-f3c9f686f4b0)
 
 
-
+Assim 
 
     
 
