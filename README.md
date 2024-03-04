@@ -1,4 +1,4 @@
-# Projeto piloto utilizando conceitos de extração, orquestração, armazenamento, catalogação, transformação e análise através de serviços containizados e servless com tecnologias robustas e modernas
+# Projeto ETL utilizando conceitos de extração, orquestração, armazenamento, catalogação, transformação e análise através de serviços containizados e servless com tecnologias robustas e modernas
 
 Este pequeno projeto foi baseado no curso ministrado pelo Giuliano Ferreira (Data Engineering usando a Modern Data Stack da Stack Academy - https://stack-academy.memberkit.com.br/)
 
