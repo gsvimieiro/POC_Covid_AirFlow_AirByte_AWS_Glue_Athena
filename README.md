@@ -79,6 +79,10 @@ Após o processamento, iremos novamente editar o nosso Crawler inserindo o schem
 
 ![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/bb55dc96-20a0-4cb5-b8eb-c4536fdf6bc9)
 
+Após rodar o Crawler, temos agora todas as nossas tabelas catalogadas e inferidas o Schema no nosso data catalog
+
+![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/6bcc2458-4f36-4561-a69f-7eb42de65332)
+
 
 - AWS Athena
   
