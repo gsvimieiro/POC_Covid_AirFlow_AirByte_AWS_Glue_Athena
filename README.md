@@ -1,6 +1,6 @@
 # Poc_Covid_AirFlow_AirByte_AWS_Glue_Athena
 
-Este pequeno projeto foi baseado no curso ministrado pelo Giuliano (Data Engineering usando a Modern Data Stack da Stack Academy - https://stack-academy.memberkit.com.br/)
+Este pequeno projeto foi baseado no curso ministrado pelo Giuliano Ferreira (Data Engineering usando a Modern Data Stack da Stack Academy - https://stack-academy.memberkit.com.br/)
 
 Estudo de caso COVID utilizando Airbyte para extração, Airflow como orquestrador, AWS Glue/Krawler para catalogar, inferir o schema e realizar transformação e por fim Athena para análise. 
 
@@ -8,6 +8,17 @@ Estudo de caso COVID utilizando Airbyte para extração, Airflow como orquestrad
 
 
 - Observação importante : Neste exemplo, por ser mais didático eu não estou preocupado com Segurança pois meu intuíto é mostrar o funcionamento de ponta a ponta da minha solução, então, questões como secret's, bucket privado, etc eu não adotei
+
+Tecnologias utilizadas :
+
+- DrawIO: Desenho da arquitetura
+- GitHub: Repositório do projeto
+- GitPod: Desenvolvimento das DAGS, etc
+- Docker: Imagens e containers
+- Airbyte: Extrator dos arquivos para o projeto
+- Airflow: Orquestração das Pipelines do Airbyte
+- AWS Glue/Krawler: Catalogar, inferir schema e as transformações
+- AWS Athena: Análise dos dados
 
 Tarefas :
 
