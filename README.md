@@ -51,6 +51,8 @@ Tarefas :
         - docker network connect poc-airbyte-airflow airflow-airflow-worker-1
         - docker network connect poc-airbyte-airflow airflow-airflow-webserver-1
 
+Executar o Airflow que irá chamar o Airbyte para extração dos arquivos COVID armazenando na pasta raw do repositório do AWS S3
+
 - Pode-se instalar a lib para conexão do airbyte/airflow  OK
 
     - docker-compose run airflow-webserver airflow connections add 'airbyte_connection' --conn-uri 'airbyte://airbyte-proxy:8000'
@@ -91,7 +93,7 @@ Nesse editor, já conseguimos trabalhar e fazer várias análises via SQL com as
 ![image](https://github.com/gsvimieiro/POC_Covid_AirFlow_AirByte_AWS_Glue_Athena/assets/25323854/403c24c3-483e-4b76-a1a4-f3c9f686f4b0)
 
 
-Assim conseguimos demonstrar através de várias tecnologias um pipeline completo desde a extração, orquestração, armazenamento, catalogação, pequenas transformações e por fim uma mostra de análise.
+Assim conseguimos demonstrar através de várias tecnologias um pipeline ETL completo desde a extração, orquestração, armazenamento, catalogação, pequenas transformações e por fim uma mostra de análise.
 
 Obrigado por acompanhar 
 
