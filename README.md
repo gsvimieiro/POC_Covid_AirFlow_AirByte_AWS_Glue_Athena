@@ -8,7 +8,7 @@ Estudo de caso COVID utilizando Airbyte para extração, Airflow como orquestrad
 
 
 
-- Observação importante : Neste exemplo, por ser mais didático eu não estou preocupado com Segurança pois meu intuíto é mostrar o funcionamento de ponta a ponta da minha solução, então, questões como secret's, bucket privado, etc eu não adotei
+- Observação importante : Neste exemplo, por ser mais didático, não estamos preocupados com Segurança pois nosso intuíto é mostrar o funcionamento de ponta a ponta da solução, então, questões como secret's, bucket privado, etc não adotamos.
 
 Tecnologias utilizadas :
 
